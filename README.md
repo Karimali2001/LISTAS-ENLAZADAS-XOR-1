@@ -1,5 +1,5 @@
 # LISTAS-ENLAZADAS-XOR-1
-Implementacion de listas enlazadas XOR 
+Implementacion de listas enlazadas XOR en C
 
 PARA EJECUTAR EN LINUX
 
