@@ -6,11 +6,11 @@
 
 int main(){
     
-    NodoLista *Lista;
+    NodoLista *Lista=NULL;
     int opc,e; //variable para menu //fila columna y elemento 
     printf("                LISTA ENLAZADA XOR\n");//encabezado
-    Inicializar(&Lista); //se inicializa la lista en NULL
     Lista = crearLista(); //se reserva el espacio en memoria de la lista
+    Inicializar(Lista); //se inicializa la lista
     //menu
     do{ 
         printf("\n\n\n"); //dejo espacios arriba

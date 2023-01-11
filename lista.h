@@ -17,8 +17,8 @@ typedef struct nodolista{
 NodoLista *crearLista();
 // Reserva e inicializa la estructura para una lista
 int crearNodo(Nodo **nuevoNodo, int valor);
-//inicializa una lista de listas en NULL
-void Inicializar(NodoLista **Lista);
+//inicializa una lista de listas
+void Inicializar(NodoLista *Lista);
 //retorna 1 si la lista esta vacia y cero si no lo esta
 int esVacia(NodoLista *Lista);
 //retorna el XOR de dos apuntadores dados

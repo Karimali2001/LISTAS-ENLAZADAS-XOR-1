@@ -12,8 +12,6 @@ NodoLista *crearLista(){
 		printf("crearListaLista: error en malloc");
 		exit(1); //termina la ejecucion del programa y retorna 1
 	}
-    nuevoNodo->longitud = 0;
-    nuevoNodo->inicio = nuevoNodo->fin = NULL;
 
     return nuevoNodo;
 }
@@ -32,9 +30,10 @@ int crearNodo(Nodo **nuevoNodo, int valor){
     return 1;
 }
 
-//inicializa una lista de listas en NULL
-void Inicializar(NodoLista **Lista) {
-    *Lista = NULL;
+//inicializa una lista de listas
+void Inicializar(NodoLista *Lista) {
+    Lista->inicio=Lista->fin=NULL;
+    Lista->longitud=0;
 }
 
 //retorna 1 si la lista esta vacia y cero si no lo esta
